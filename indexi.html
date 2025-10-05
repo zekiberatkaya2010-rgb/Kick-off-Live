@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kick-off Ultra - Dinamik Canlı Skor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <h1>Kick-off <span>ULTRA</span></h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#canli" class="nav-item active" data-section="canli"><i class="fas fa-bolt"></i> Canlı Skor</a></li>
+                <li><a href="#program" class="nav-item" data-section="program"><i class="fas fa-calendar-week"></i> Fikstür</a></li>
+                <li><a href="#haberler" class="nav-item" data-section="haberler"><i class="fas fa-bullhorn"></i> Puan Durumu</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <div class="search-bar">
+                <input type="text" placeholder="Maç, takım veya lig ara..." id="searchInput">
+                <i class="fas fa-search"></i>
+            </div>
+            <a href="#" class="profile-icon" title="Giriş / Profil"><i class="fas fa-user-circle"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <section id="canli" class="content-section live-matches-section">
+            <h2 class="section-title"><i class="fas fa-satellite-dish"></i> Canlı ve Öne Çıkan Maçlar</h2>
+            <div class="match-grid" id="match-cards-container">
+                </div>
+        </section>
+
+        <section id="program" class="content-section schedule-section">
+            <h2 class="section-title"><i class="fas fa-calendar-alt"></i> Yaklaşan Maç Programı</h2>
+            <div class="schedule-list">
+                <div class="schedule-item">
+                    <span class="schedule-time">20:00</span>
+                    <span class="schedule-league">Premier Lig</span>
+                    <span class="schedule-teams">Arsenal <i class="fas fa-vs"></i> Tottenham</span>
+                    <button class="schedule-button"><i class="fas fa-plus"></i> Takvime Ekle</button>
+                </div>
+                 <div class="schedule-item">
+                    <span class="schedule-time">22:30</span>
+                    <span class="schedule-league">La Liga</span>
+                    <span class="schedule-teams">Sevilla <i class="fas fa-vs"></i> Real Betis</span>
+                    <button class="schedule-button"><i class="fas fa-plus"></i> Takvime Ekle</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="haberler" class="content-section news-section">
+            <h2 class="section-title"><i class="fas fa-newspaper"></i> Futbol Dünyasından Son Haberler</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <img src="https://via.placeholder.com/400x250/111111/FFFFFF?text=MAN%20CITY%20TRANSFER" alt="Transfer Haberi">
+                    <div class="news-content">
+                        <h3>Guardiola'dan Kritik Açıklama: Transfer Bütçesi!</h3>
+                        <p>Katalan teknik adam, önümüzdeki sezon için transfer stratejilerini belirledi...</p>
+                        <a href="#" class="read-more">Hepsini Oku <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <img src="https://via.placeholder.com/400x250/111111/FFFFFF?text=Milli%20Takım" alt="Milli Takım Haberi">
+                    <div class="news-content">
+                        <h3>Milli Takım'da Yeni Dönem Başladı: İlk Antrenman</h3>
+                        <p>Yeni teknik direktör yönetiminde ilk antrenman yapıldı. Kadroda büyük sürprizler var.</p>
+                        <a href="#" class="read-more">Hepsini Oku <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>Tasarım: Zeki Berat Kaya | <i class="fas fa-copyright"></i> 2025 Kick-off ULTRA</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
