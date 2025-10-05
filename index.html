@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kick_off-Live</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-left">
+      <div class="logo">
+        <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=0f1b5b6b7a0b1d2c3e4f5a6b7c8d9e0f" alt="Kick_off-Live" />
+        <span>Kick_off-Live</span>
+      </div>
+    </div>
+    <ul class="nav-right">
+      <li><a href="#matches">Maçlar</a></li>
+      <li><a href="#news">Haberler</a></li>
+      <li><a href="#videos">Videolar</a></li>
+      <li><a href="#stats">İstatistikler</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Canlı Futbol Atmosferi — Her Yerden Takip Et</h1>
+      <p>Maç programları, özetler ve istatistiklerle Kick_off-Live’de sahadasın.</p>
+      <div class="hero-cta">
+        <a href="#matches" class="btn">Maç Takvimine Git</a>
+        <a href="#videos" class="btn outline">Özetlere Göz At</a>
+      </div>
+    </div>
+
+    <!-- Animated ball -->
+    <div class="ball" id="ball">
+      <div class="ball-core"></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Matches -->
+    <section id="matches" class="section container" data-aos="fade-up">
+      <h2>Yaklaşan / Canlı Maçlar</h2>
+      <div class="matches-grid" id="matchesGrid">
+        <!-- Match cards (JS will populate some) -->
+      </div>
+    </section>
+
+    <!-- News -->
+    <section id="news" class="section alt container" data-aos="fade-up">
+      <h2>Haberler</h2>
+      <div class="news-slider" id="newsSlider">
+        <div class="news-slide">
+          <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=a1b2c3d4e5f6" alt="">
+          <div class="news-caption">
+            <h3>Derbi Gecesi: İddialar ve Hazırlıklar</h3>
+            <p>Takımlar son antrenmanlarını tamamladı — bahisler ve tahminler burada.</p>
+          </div>
+        </div>
+        <div class="news-slide">
+          <img src="https://images.unsplash.com/photo-1520975918750-3cd0f78b5c5e?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=b2c3d4e5f6a7" alt="">
+          <div class="news-caption">
+            <h3>Genç Yetenek Radarında: Yeni İsimler</h3>
+            <p>Kulüpler genç oyuncular için kapışıyor — yetenek taraması başladı.</p>
+          </div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button id="prevNews"><i class="fa fa-chevron-left"></i></button>
+        <button id="nextNews"><i class="fa fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <!-- Videos -->
+    <section id="videos" class="section container" data-aos="fade-up">
+      <h2>Özetler & Videolar</h2>
+      <div class="videos-grid">
+        <div class="video-card">
+          <div class="video-thumb">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="video" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <h4>Maç Özeti: Takım A vs Takım B</h4>
+        </div>
+        <div class="video-card">
+          <div class="video-thumb">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="video" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <h4>En Güzel Goller Listesi</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section id="stats" class="section alt container" data-aos="fade-up">
+      <h2>İstatistikler</h2>
+      <div class="stats-grid">
+        <div class="stat" data-target="127">
+          <h3 class="stat-number">0</h3>
+          <p>Toplam Gol</p>
+        </div>
+        <div class="stat" data-target="35">
+          <h3 class="stat-number">0</h3>
+          <p>Maç</p>
+        </div>
+        <div class="stat" data-target="14">
+          <h3 class="stat-number">0</h3>
+          <p>Asistler</p>
+        </div>
+        <div class="stat" data-target="9">
+          <h3 class="stat-number">0</h3>
+          <p>Kırmızı Kart</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p>© 2025 Kick_off-Live — Yasal içerikler. Telif hakkı sahibi kurumların hakları saklıdır.</p>
+        <div class="social">
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- Site script -->
+  <script src="script.js"></script>
+</body>
+</html>
